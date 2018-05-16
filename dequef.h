@@ -70,7 +70,8 @@ class Deque
 
    T & back() throw (const char *);
 
-
+  //private variables
+  
   private:
    T * data;          // dynamically allocated array of T
    int numItems;      // how many items are currently in the Deque?
