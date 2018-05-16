@@ -69,8 +69,6 @@ class Deque
    T & front() throw (const char *);
 
    T & back() throw (const char *);
-
-  //private variables
   
   private:
    T * data;          // dynamically allocated array of T
@@ -226,10 +224,10 @@ Deque <T> & Deque <T>  :: operator= (const Deque & rhs) throw (const char *)
 }
 
 /***************************************************
- * Deque :: resize
+ * Deque :: resize THAT
  * Doubles the size of the Deque
  **************************************************/
-   template <class T>
+   template <class T>;
    void Deque <T> :: resize()
    {
       T * tempData = new T[cap *= 2];
