@@ -58,19 +58,10 @@ class Deque
 
    void resize();
 
-   void push_back(const T & item) throw (const char *);
+   // Stupid code is gone!!
 
-   void push_front(const T & item) throw (const char *);
-
-   void pop_front() throw (const char *);
-
-   void pop_back() throw (const char *);
-
-   T & front() throw (const char *);
-
-   T & back() throw (const char *);
-
-
+  //private variables
+  
   private:
    T * data;          // dynamically allocated array of T
    int numItems;      // how many items are currently in the Deque?
