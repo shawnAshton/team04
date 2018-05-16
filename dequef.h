@@ -58,9 +58,20 @@ class Deque
 
    void resize();
 
-   // Stupid code is gone!!
-
   //private variables
+
+   void push_back(const T & item) throw (const char *);
+
+   void push_front(const T & item) throw (const char *);
+
+   void pop_front() throw (const char *);
+
+   void pop_back() throw (const char *);
+
+   T & front() throw (const char *);
+
+   T & back() throw (const char *);
+
   
   private:
    T * data;          // dynamically allocated array of T
@@ -216,10 +227,10 @@ Deque <T> & Deque <T>  :: operator= (const Deque & rhs) throw (const char *)
 }
 
 /***************************************************
- * Deque :: resize
+ * Deque :: resize THAT
  * Doubles the size of the Deque
  **************************************************/
-   template <class T>
+   template <class T>;
    void Deque <T> :: resize()
    {
       T * tempData = new T[cap *= 2];
